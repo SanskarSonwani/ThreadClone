@@ -94,7 +94,7 @@ const loginUser = async (req, res) => {
 		}
 
 		if (user.isFrozen) {
-			return res.status(404).json({"message":"User id is frozed!"});
+			return res.status(404).json({error: "Id is freezed"});
 		}
 
 
